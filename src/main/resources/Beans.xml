@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="fescue" class="com.example.webappassignment1.Grass">
+        <property name="cost" value="0.05"></property>
+        <property name="name" value="fescue"></property>
+    </bean>
+    <bean id="bentgrass" class="com.example.webappassignment1.Grass">
+        <property name="cost" value="0.02"></property>
+        <property name="name" value="bentgrass"></property>
+    </bean>
+    <bean id="campus" class="com.example.webappassignment1.Grass">
+        <property name="cost" value="0.01"></property>
+        <property name="name" value="campus"></property>
+    </bean>
+
+    <bean id="tree" class="com.example.webappassignment1.Tree">
+        <property name="cost" value="100"></property>
+    </bean>
+
+    <bean id="costcalculator" class="com.example.webappassignment1.CostCalculator">
+        <property name="baseLaborCharge" value="1000"></property>
+        <property name="largeSurface" value="5000"></property>
+        <property name="largeSurfaceCost" value="500"></property>
+        <property name="totalCost" value="0"></property>
+        <property name="length" value="0"></property>
+        <property name="width" value="0"></property>
+    </bean>
+</beans>
